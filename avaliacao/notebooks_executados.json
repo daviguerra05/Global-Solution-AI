@@ -1,0 +1,20 @@
+[
+  {
+    "notebook": "01_base_e_busca.ipynb",
+    "executado": true,
+    "celulas_codigo": 3,
+    "celulas_com_saida": 3
+  },
+  {
+    "notebook": "02_treinamento_local.ipynb",
+    "executado": true,
+    "celulas_codigo": 3,
+    "celulas_com_saida": 3
+  },
+  {
+    "notebook": "03_avaliacao_e_integracao.ipynb",
+    "executado": true,
+    "celulas_codigo": 4,
+    "celulas_com_saida": 4
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "verificado_em_utc": "2026-11-06T18:28:21.339044+00:00",
+  "resultado": "Artefatos íntegros; não certifica qualidade factual da geração.",
+  "testes_aprovados": 23,
+  "notebooks": [
+    {
+      "arquivo": "01_base_e_busca.ipynb",
+      "celulas_executadas": 3,
+      "sha256": "811ac1bc808fca1eed7118f6b38143dcc974f6bff443bbe979ca60fbe8bde4c7"
+    },
+    {
+      "arquivo": "02_treinamento_local.ipynb",
+      "celulas_executadas": 3,
+      "sha256": "6921a121525ea069577cc109419ea224adda0f5e90c5d6a68e8359b34e0ee7ef"
+    },
+    {
+      "arquivo": "03_avaliacao_e_integracao.ipynb",
+      "celulas_executadas": 4,
+      "sha256": "f4429a19ab5fefec0e28c28768ff6c28d5085cb007684e1ae12475c74bbcd985"
+    }
+  ],
+  "saidas_por_configuracao": {
+    "sem_contexto": 60,
+    "rag": 60,
+    "lora_rag": 60
+  },
+  "erros_documentados": 5,
+  "contextos_b_c_identicos": true,
+  "adapter_sha256": "a1fbd1ead71c928c332c36e5ce57b01a9398b67be52a8e347a634a2eb55b043f",
+  "teste_sha256": "5136b5ee1d2432e7e4ab455f6e9c8489e6e232f7c05542f049cdbc2ccba2286e"
+}

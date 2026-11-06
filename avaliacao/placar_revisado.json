@@ -1,0 +1,35 @@
+[
+  {
+    "configuracao": "sem_contexto",
+    "acertos_fatuais": 0,
+    "respondiveis": 40,
+    "recusas_corretas": 0,
+    "nao_consta": 20,
+    "acerto_total_revisado_pct": 0.0,
+    "acerto_factual_revisado_pct": 0.0,
+    "acerto_completo_revisado_pct": 0.0,
+    "saida_sha256": "2d0502844df3c7a23996c3e6e75f7a4580d6495692de10a31bd7885ad4218e09"
+  },
+  {
+    "configuracao": "rag",
+    "acertos_fatuais": 20,
+    "respondiveis": 40,
+    "recusas_corretas": 8,
+    "nao_consta": 20,
+    "acerto_total_revisado_pct": 46.67,
+    "acerto_factual_revisado_pct": 50.0,
+    "acerto_completo_revisado_pct": 13.33,
+    "saida_sha256": "1688e5bda733ad5dfcab84c8555035260da08786c32128c82dbfb4b68062a25f"
+  },
+  {
+    "configuracao": "lora_rag",
+    "acertos_fatuais": 1,
+    "respondiveis": 40,
+    "recusas_corretas": 11,
+    "nao_consta": 20,
+    "acerto_total_revisado_pct": 20.0,
+    "acerto_factual_revisado_pct": 2.5,
+    "acerto_completo_revisado_pct": 18.33,
+    "saida_sha256": "4f512919197d6e7a882b47661779fe10799e9a74a1cb66787f049721e8456a52"
+  }
+]

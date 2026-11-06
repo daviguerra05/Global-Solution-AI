@@ -1,0 +1,57 @@
+{
+  "config": {
+    "epocas": 4,
+    "lote": 2,
+    "acumulacao": 2,
+    "learning_rate": 0.0003,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "max_seq": 640,
+    "seed": 42,
+    "threads": 6,
+    "dtype": "float32",
+    "device": "cpu"
+  },
+  "modelo": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revisao": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "parametros_treinaveis": 2442240,
+  "parametros_totais": 136957248,
+  "treino": 200,
+  "validacao": 20,
+  "max_tokens_exemplo": 398,
+  "mascara_prompt_verificada": true,
+  "treino_sha256": "df6a7720bf444a2c6470772b0d1afe656dd8b5fc9a2f3da5d22259ff8c5ea3c4",
+  "teste_sha256": "5136b5ee1d2432e7e4ab455f6e9c8489e6e232f7c05542f049cdbc2ccba2286e",
+  "passos": [
+    {
+      "epoca": 1,
+      "lote": 1,
+      "passo": 1,
+      "loss": 1.8115087747573853,
+      "segundos": 3.688553199997841,
+      "ram_processo_gb": 1.4318466186523438
+    },
+    {
+      "epoca": 1,
+      "lote": 2,
+      "passo": 2,
+      "loss": 1.7460906505584717,
+      "segundos": 3.827572999998665,
+      "ram_processo_gb": 1.0179824829101562
+    },
+    {
+      "epoca": 1,
+      "lote": 3,
+      "passo": 3,
+      "loss": 1.594163179397583,
+      "segundos": 5.8408913999992365,
+      "ram_processo_gb": 0.9149208068847656
+    }
+  ],
+  "epocas": [],
+  "pilot": true,
+  "duracao_s": 14.429661600002873,
+  "ram_pico_gb": 1.4318466186523438,
+  "estimativa_treino_s": 1780.9356799994323
+}

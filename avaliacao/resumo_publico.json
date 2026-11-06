@@ -1,0 +1,6 @@
+{
+  "interpretacao": "A revisão não confirmou o ganho factual sugerido pelo corretor automático. O RAG simples preservou mais fatos essenciais do que LoRA, mas falhou no contrato JSON. LoRA melhorou o formato e parte das recusas, ao custo de conteúdo incoerente em fatos não usados no treino. O treinamento e a comparação foram realizados; a especialização não atingiu qualidade factual adequada para uso livre. Por isso, o MVP recomenda consulta documental direta, que apresenta as notas e fontes sem paráfrase da LLM. Os três modos de geração continuam disponíveis como experimento. Essa decisão de produto é posterior à avaliação e não foi contabilizada como desempenho da LLM.",
+  "resumo_automatico_com_limitacoes": "Os resultados de conteúdo do corretor automático inicial são preservados somente para auditoria. A interpretação factual usa a revisão semântica e deve respeitar seus limites.",
+  "melhor_epoca": 1,
+  "teste_sha256": "5136b5ee1d2432e7e4ab455f6e9c8489e6e232f7c05542f049cdbc2ccba2286e"
+}

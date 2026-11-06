@@ -1,0 +1,9 @@
+aparelho,potencia_w,horas_dia,dias_mes,quantidade,fator_uso
+Chuveiro,5500,0.5,30,1,1
+Geladeira,150,24,30,1,0.3
+Ar-condicionado,900,6,20,1,0.65
+Iluminação LED,9,5,30,6,1
+Televisor,100,4,30,1,1
+Lavadora,500,1,12,1,1
+Notebook,65,8,22,1,1
+Ventilador,60,6,20,1,1

@@ -1,0 +1,1266 @@
+{
+  "metodo": "Revisão assistida por IA das saídas contra os fatos e a pergunta; não é avaliação humana independente. Pós-teste, sem alterar a execução.",
+  "criterio": "Presença do fato essencial correto; eco, tautologia, ambiguidade de unidade/operação e mistura incoerente não recebem crédito.",
+  "decisoes": [
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E015-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E002-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-09",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-18",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E012-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-16",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E012-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E003-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-04",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-11",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E002-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-15",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-02",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E014-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E019-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Repete a pergunta. A palavra ensaboamento do próprio enunciado causou falso positivo automático."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E012-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E003-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E018-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E014-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-14",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E013-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E013-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E018-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E001-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E013-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-13",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E014-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E015-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E003-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-05",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-10",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-08",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E002-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E011-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E014-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-20",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-07",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E015-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E019-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E019-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Repete a pergunta. A palavra reduz do próprio enunciado causou falso positivo automático."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E003-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E018-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E011-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E015-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-03",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E012-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E011-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E018-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-12",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E013-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E001-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-17",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-19",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E001-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-01",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-NC-06",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E002-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E001-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E011-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "sem_contexto",
+      "id": "T-E019-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E015-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E002-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-09",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-18",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E012-3",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-16",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E012-1",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E003-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-04",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-11",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E002-4",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-15",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-02",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E014-2",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E019-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E012-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E003-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Atribui 1000 kWh à potência e define potência como quantidade de energia, confundindo unidades."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E018-2",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E014-1",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-14",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E013-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E013-1",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E018-4",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E001-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E013-4",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-13",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E014-4",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E015-2",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E003-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Confunde potência e energia; a presença das palavras não prova a relação correta."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-05",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-10",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-08",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E002-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E011-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E014-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-20",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-07",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E015-3",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E019-4",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E019-1",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E003-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E018-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E011-2",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E015-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-03",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E012-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E011-4",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E018-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-12",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E013-2",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E001-3",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-17",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-19",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E001-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-01",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-NC-06",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E002-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E001-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E011-3",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "rag",
+      "id": "T-E019-2",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "Fato essencial presente no texto, independentemente da falha de formato/citação."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E015-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E002-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-09",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-18",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E012-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-16",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E012-1",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Apesar do ruído inicial, informa corretamente consumo em kWh por mês e cita E012."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E003-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-04",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-11",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E002-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Diz dividir o tempo em horas por 60. O correto é dividir minutos por 60."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-15",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-02",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E014-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E019-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Mistura fechamento da água com ciclos e roupas; não é uma orientação coerente e fiel à pergunta."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E012-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E003-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Mistura potência com kWh antes de mencionar W; resposta ambígua e incoerente, sem definição confiável."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E018-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E014-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-14",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E013-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E013-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E018-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E001-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E013-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-13",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E014-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E015-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E003-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Afirma que potência é uma estimativa em kWh, relação incorreta."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-05",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-10",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-08",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E002-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E011-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E014-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-20",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-07",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E015-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E019-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Reformula a pergunta sem fornecer um hábito concreto de redução do tempo."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E019-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E003-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E018-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E011-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E015-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-03",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E012-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E011-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E018-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-12",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E013-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E001-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-17",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-19",
+      "correto_revisao": true,
+      "acerto_completo_revisao": false,
+      "nota": "O texto recusa, mas o status diz respondido e cita fonte. Acerto de conteúdo de recusa, falha no contrato semântico."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E001-4",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-01",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Não reconhece explicitamente que a informação solicitada está ausente."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-NC-06",
+      "correto_revisao": true,
+      "acerto_completo_revisao": true,
+      "nota": "Recusa apropriada."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E002-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E001-1",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E011-3",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Eco, informação incorreta/irrelevante ou resposta incompleta em relação ao fato exigido."
+    },
+    {
+      "configuracao": "lora_rag",
+      "id": "T-E019-2",
+      "correto_revisao": false,
+      "acerto_completo_revisao": false,
+      "nota": "Mistura banho, espera e roupas; a presença de palavras não torna a resposta adequada."
+    }
+  ]
+}

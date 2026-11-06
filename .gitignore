@@ -1,0 +1,17 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+runtime/
+base/originais/
+avaliacao/runs_intermediarios/
+modelos/base/
+modelos/encoder/
+*.safetensors.index.json

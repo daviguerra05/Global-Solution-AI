@@ -1,0 +1,90 @@
+[
+  {
+    "id": "S01",
+    "url": "https://www.cemig.com.br/faturas/entenda-sua-conta/",
+    "consultado_em": "2026-11-06T17:26:17.497983+00:00",
+    "status_http": 200,
+    "sha256": "a57d8874a46cd5b3c06a3d6329739c6cd8818cf180fa681d4199bbaddcef7e33",
+    "bytes": 125372
+  },
+  {
+    "id": "S02",
+    "url": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/sobre-a-etiqueta",
+    "consultado_em": "2026-11-06T17:22:37.115094+00:00",
+    "status_http": 200,
+    "sha256": "46222b1754f8172a19a7c56248ffde7337ce0407c961d19d9cba43f5787d2c47",
+    "bytes": 126521
+  },
+  {
+    "id": "S03",
+    "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas/tarifa-branca",
+    "consultado_em": "2026-11-06T17:22:38.201551+00:00",
+    "status_http": 200,
+    "sha256": "5954a6480bd7d69ef83ab04fb4bc58d67862c9b4f56008fa2b625d9a5b6f53eb",
+    "bytes": 470448
+  },
+  {
+    "id": "S04",
+    "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas/tarifa-branca/perguntas-frequentes-sobre-tarifa-branca/",
+    "consultado_em": "2026-11-06T17:22:38.858511+00:00",
+    "status_http": 200,
+    "sha256": "3a04765aa45573f2440a953730ee5ae35ea57e473a960e76c23ead40406b19c2",
+    "bytes": 524629
+  },
+  {
+    "id": "S05",
+    "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/perguntas-frequentes/tarifa-de-energia-eletrica",
+    "consultado_em": "2026-11-06T17:22:39.492849+00:00",
+    "status_http": 200,
+    "sha256": "63ce9c00f725dccf9b8d62fea4263bcc8d29a192d375236e7f4e67fb450064d2",
+    "bytes": 177814
+  },
+  {
+    "id": "S06",
+    "url": "https://www.gov.br/aneel/pt-br/centrais-de-conteudos/relatorios-e-indicadores/tarifas-e-informacoes-economico-financeiras",
+    "consultado_em": "2026-11-06T17:22:42.114233+00:00",
+    "status_http": 200,
+    "sha256": "f898f3dd4724a1c24e1a3de14fbfc97285bd0b77352335cfd382d710a80b67d5",
+    "bytes": 527530
+  },
+  {
+    "id": "S07",
+    "url": "https://www.cemig.com.br/noticia/dicas-e-orientacoes/aprenda-o-basico-da-economia-de-energia-em-casa/",
+    "consultado_em": "2026-11-06T17:22:42.760658+00:00",
+    "status_http": 200,
+    "sha256": "017f512bc726fa7dbcc57ae0953bb557d84e60b65a81a139d04d5286a08901e8",
+    "bytes": 88344
+  },
+  {
+    "id": "S08",
+    "url": "https://www.cemig.com.br/noticia/dicas-e-orientacoes/acumular-roupas-para-lavar-e-passar-ajuda-a-economizar-energia-cemig-explica-por-que/",
+    "consultado_em": "2026-11-06T17:22:43.149957+00:00",
+    "status_http": 200,
+    "sha256": "a4bd571693d449fab83fad5f6eae2a7b93ac0651cfcc42196534420db9e03f1d",
+    "bytes": 104260
+  },
+  {
+    "id": "S09",
+    "url": "https://ri.cemig.com.br/sustentabilidade/eficiencia-energetica",
+    "consultado_em": "2026-11-06T17:22:43.518613+00:00",
+    "status_http": 200,
+    "sha256": "a1c6a6758eff0c7308496d9a8d4fdee05f268c2b6e3dec1db16789b22df5d498",
+    "bytes": 121854
+  },
+  {
+    "id": "S10",
+    "url": "https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/noticias/2025/nova-etiqueta-do-inmetro-para-refrigeradores-entra-em-vigor-a-partir-de-1o-de-janeiro-de-2026/",
+    "consultado_em": "2026-11-06T17:22:43.722011+00:00",
+    "status_http": 200,
+    "sha256": "05876267b1272312711fe4bbfea495c9f7b16839b2417753ab5eceb2a6247666",
+    "bytes": 129623
+  },
+  {
+    "id": "S11",
+    "url": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/refrigeradores-frigobares-combinados-combinados-frost-free",
+    "consultado_em": "2026-11-06T17:22:45.902349+00:00",
+    "status_http": 200,
+    "sha256": "ccb0df9e7445083de77e63636b0c7ca38d1e435c191c2095dc41a2b02e4f5749",
+    "bytes": 131900
+  }
+]

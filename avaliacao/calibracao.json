@@ -1,0 +1,1016 @@
+{
+  "limiar": 0.85,
+  "recall_3": 1.0,
+  "rejeicao_correta": 0.75,
+  "equilibrio": 0.875,
+  "top_k": 3,
+  "corpus_sha256": "fe6567f9be43a847107e8e46ff4d37c6f04283588bfac0c61ff8e371c7ff0497",
+  "validacao_sha256": "22501d449a050d69de512e651ee76602ca85974774594afc2c919dce88945e00",
+  "criterio": "Média de recall@3 nas respondíveis e rejeição nas não respondíveis, só na validação.",
+  "curva": [
+    {
+      "limiar": 0.6,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.605,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.61,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.615,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.62,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.625,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.63,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.635,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.64,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.645,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.65,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.655,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.66,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.665,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.67,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.675,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.68,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.685,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.69,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.695,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.7,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.705,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.71,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.715,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.72,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.725,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.73,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.735,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.74,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.745,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.75,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.755,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.76,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.765,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.77,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.775,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.78,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.785,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.79,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.795,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.8,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.805,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.81,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.815,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.82,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.825,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.25,
+      "equilibrio": 0.625
+    },
+    {
+      "limiar": 0.83,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.25,
+      "equilibrio": 0.625
+    },
+    {
+      "limiar": 0.835,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.375,
+      "equilibrio": 0.6875
+    },
+    {
+      "limiar": 0.84,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.5,
+      "equilibrio": 0.75
+    },
+    {
+      "limiar": 0.845,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.625,
+      "equilibrio": 0.8125
+    },
+    {
+      "limiar": 0.85,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.75,
+      "equilibrio": 0.875
+    },
+    {
+      "limiar": 0.855,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.75,
+      "equilibrio": 0.875
+    },
+    {
+      "limiar": 0.86,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.75,
+      "equilibrio": 0.875
+    },
+    {
+      "limiar": 0.865,
+      "recall_3": 1.0,
+      "rejeicao_correta": 0.75,
+      "equilibrio": 0.875
+    },
+    {
+      "limiar": 0.87,
+      "recall_3": 0.8333333333333334,
+      "rejeicao_correta": 0.75,
+      "equilibrio": 0.7916666666666667
+    },
+    {
+      "limiar": 0.875,
+      "recall_3": 0.6666666666666666,
+      "rejeicao_correta": 0.75,
+      "equilibrio": 0.7083333333333333
+    },
+    {
+      "limiar": 0.88,
+      "recall_3": 0.5833333333333334,
+      "rejeicao_correta": 0.875,
+      "equilibrio": 0.7291666666666667
+    },
+    {
+      "limiar": 0.885,
+      "recall_3": 0.5833333333333334,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.7916666666666667
+    },
+    {
+      "limiar": 0.89,
+      "recall_3": 0.4166666666666667,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.7083333333333334
+    },
+    {
+      "limiar": 0.895,
+      "recall_3": 0.4166666666666667,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.7083333333333334
+    },
+    {
+      "limiar": 0.9,
+      "recall_3": 0.25,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.625
+    },
+    {
+      "limiar": 0.905,
+      "recall_3": 0.08333333333333333,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5416666666666666
+    },
+    {
+      "limiar": 0.91,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.915,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.92,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.925,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.93,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.935,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.94,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.945,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.95,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.955,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    },
+    {
+      "limiar": 0.96,
+      "recall_3": 0.0,
+      "rejeicao_correta": 1.0,
+      "equilibrio": 0.5
+    }
+  ],
+  "detalhes": [
+    {
+      "id": "V-NC-07",
+      "grupo_fato": "V-NC-07",
+      "tipo": "nao_consta",
+      "pergunta": "Qual é a localização exata do meu apartamento?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E022",
+          "score": 0.8392143249511719
+        },
+        {
+          "id": "E021",
+          "score": 0.8369101285934448
+        },
+        {
+          "id": "E023",
+          "score": 0.8346693515777588
+        }
+      ]
+    },
+    {
+      "id": "V-NC-05",
+      "grupo_fato": "V-NC-05",
+      "tipo": "nao_consta",
+      "pergunta": "Qual a temperatura dentro da minha geladeira agora?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E030",
+          "score": 0.8770797848701477
+        },
+        {
+          "id": "E021",
+          "score": 0.8705377578735352
+        },
+        {
+          "id": "E023",
+          "score": 0.8680239915847778
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E024",
+      "tipo": "respondível",
+      "resposta_esperada": "Sim. O modo de espera pode continuar consumindo energia; siga o manual ao desligar o aparelho.",
+      "fatos_aceitos": [
+        [
+          "sim",
+          "continu"
+        ],
+        [
+          "consum"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E024"
+      ],
+      "id": "V-E024-1",
+      "pergunta": "Um aparelho em standby ainda pode consumir energia?",
+      "recuperados": [
+        {
+          "id": "E024",
+          "score": 0.9009748697280884
+        },
+        {
+          "id": "E029",
+          "score": 0.8422472476959229
+        },
+        {
+          "id": "E028",
+          "score": 0.8414393067359924
+        }
+      ]
+    },
+    {
+      "id": "V-NC-04",
+      "grupo_fato": "V-NC-04",
+      "tipo": "nao_consta",
+      "pergunta": "Qual é a leitura atual do meu medidor?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E014",
+          "score": 0.8234153389930725
+        },
+        {
+          "id": "E013",
+          "score": 0.8211212158203125
+        },
+        {
+          "id": "E015",
+          "score": 0.8149585723876953
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E017",
+      "tipo": "respondível",
+      "resposta_esperada": "Aproveite a luz natural e apague lâmpadas em ambientes desocupados.",
+      "fatos_aceitos": [
+        [
+          "natural"
+        ],
+        [
+          "apagu",
+          "apag",
+          "desocup"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E017"
+      ],
+      "id": "V-E017-1",
+      "pergunta": "Como aproveitar a luz do dia para reduzir o gasto com iluminação?",
+      "recuperados": [
+        {
+          "id": "E017",
+          "score": 0.878918468952179
+        },
+        {
+          "id": "E019",
+          "score": 0.8735225200653076
+        },
+        {
+          "id": "E023",
+          "score": 0.8573634624481201
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E016",
+      "tipo": "respondível",
+      "resposta_esperada": "Prefira lâmpadas LED e observe o Selo Procel na compra.",
+      "fatos_aceitos": [
+        [
+          "led"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E016"
+      ],
+      "id": "V-E016-1",
+      "pergunta": "Que tipo de lâmpada a base recomenda para economizar energia?",
+      "recuperados": [
+        {
+          "id": "E016",
+          "score": 0.8676305413246155
+        },
+        {
+          "id": "E017",
+          "score": 0.8573731184005737
+        },
+        {
+          "id": "E023",
+          "score": 0.8373730182647705
+        }
+      ]
+    },
+    {
+      "id": "V-NC-02",
+      "grupo_fato": "V-NC-02",
+      "tipo": "nao_consta",
+      "pergunta": "Quanto minha família pagou de energia no mês passado?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E005",
+          "score": 0.8422410488128662
+        },
+        {
+          "id": "E007",
+          "score": 0.8366005420684814
+        },
+        {
+          "id": "E024",
+          "score": 0.8364230394363403
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E017",
+      "tipo": "respondível",
+      "resposta_esperada": "Aproveite a luz natural e apague lâmpadas em ambientes desocupados.",
+      "fatos_aceitos": [
+        [
+          "natural"
+        ],
+        [
+          "apagu",
+          "apag",
+          "desocup"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E017"
+      ],
+      "id": "V-E017-2",
+      "pergunta": "Em casa, como aproveitar a luz do dia para reduzir o gasto com iluminação?",
+      "recuperados": [
+        {
+          "id": "E019",
+          "score": 0.8873354196548462
+        },
+        {
+          "id": "E017",
+          "score": 0.8852666616439819
+        },
+        {
+          "id": "E023",
+          "score": 0.8725684285163879
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E016",
+      "tipo": "respondível",
+      "resposta_esperada": "Prefira lâmpadas LED e observe o Selo Procel na compra.",
+      "fatos_aceitos": [
+        [
+          "led"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E016"
+      ],
+      "id": "V-E016-2",
+      "pergunta": "Em casa, que tipo de lâmpada a base recomenda para economizar energia?",
+      "recuperados": [
+        {
+          "id": "E016",
+          "score": 0.8670830130577087
+        },
+        {
+          "id": "E017",
+          "score": 0.8589154481887817
+        },
+        {
+          "id": "E023",
+          "score": 0.842476487159729
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E029",
+      "tipo": "respondível",
+      "resposta_esperada": "Quando confortável, use ventilação natural ou ventilador, que costuma consumir menos energia.",
+      "fatos_aceitos": [
+        [
+          "ventilador",
+          "ventilacao natural"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E029"
+      ],
+      "id": "V-E029-2",
+      "pergunta": "Em casa, que alternativa ao ar-condicionado pode ajudar a reduzir o consumo?",
+      "recuperados": [
+        {
+          "id": "E029",
+          "score": 0.8748351335525513
+        },
+        {
+          "id": "E022",
+          "score": 0.8746800422668457
+        },
+        {
+          "id": "E023",
+          "score": 0.8630009293556213
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E028",
+      "tipo": "respondível",
+      "resposta_esperada": "Não. Desligue o ferro em pausas prolongadas e não o deixe sem supervisão.",
+      "fatos_aceitos": [
+        [
+          "nao",
+          "deslig"
+        ],
+        [
+          "pausa",
+          "supervisao"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E028"
+      ],
+      "id": "V-E028-1",
+      "pergunta": "Posso deixar o ferro ligado durante uma pausa prolongada?",
+      "recuperados": [
+        {
+          "id": "E028",
+          "score": 0.9080382585525513
+        },
+        {
+          "id": "E026",
+          "score": 0.8599337935447693
+        },
+        {
+          "id": "E024",
+          "score": 0.8402962684631348
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E026",
+      "tipo": "respondível",
+      "resposta_esperada": "Isso evita ligar o ferro repetidamente e reduz novos ciclos de aquecimento.",
+      "fatos_aceitos": [
+        [
+          "aquec",
+          "repetid"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E026"
+      ],
+      "id": "V-E026-2",
+      "pergunta": "Em casa, por que juntar roupas para passar de uma vez?",
+      "recuperados": [
+        {
+          "id": "E026",
+          "score": 0.8895055055618286
+        },
+        {
+          "id": "E019",
+          "score": 0.8482420444488525
+        },
+        {
+          "id": "E030",
+          "score": 0.8472375869750977
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E024",
+      "tipo": "respondível",
+      "resposta_esperada": "Sim. O modo de espera pode continuar consumindo energia; siga o manual ao desligar o aparelho.",
+      "fatos_aceitos": [
+        [
+          "sim",
+          "continu"
+        ],
+        [
+          "consum"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E024"
+      ],
+      "id": "V-E024-2",
+      "pergunta": "Em casa, um aparelho em standby ainda pode consumir energia?",
+      "recuperados": [
+        {
+          "id": "E024",
+          "score": 0.8990927934646606
+        },
+        {
+          "id": "E029",
+          "score": 0.8466393947601318
+        },
+        {
+          "id": "E028",
+          "score": 0.8423265218734741
+        }
+      ]
+    },
+    {
+      "id": "V-NC-03",
+      "grupo_fato": "V-NC-03",
+      "tipo": "nao_consta",
+      "pergunta": "Qual é o número da minha instalação?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E014",
+          "score": 0.831422746181488
+        },
+        {
+          "id": "E021",
+          "score": 0.8314204216003418
+        },
+        {
+          "id": "E006",
+          "score": 0.8305250406265259
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E029",
+      "tipo": "respondível",
+      "resposta_esperada": "Quando confortável, use ventilação natural ou ventilador, que costuma consumir menos energia.",
+      "fatos_aceitos": [
+        [
+          "ventilador",
+          "ventilacao natural"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E029"
+      ],
+      "id": "V-E029-1",
+      "pergunta": "Que alternativa ao ar-condicionado pode ajudar a reduzir o consumo?",
+      "recuperados": [
+        {
+          "id": "E029",
+          "score": 0.8742634057998657
+        },
+        {
+          "id": "E022",
+          "score": 0.8697768449783325
+        },
+        {
+          "id": "E023",
+          "score": 0.8596993088722229
+        }
+      ]
+    },
+    {
+      "id": "V-NC-01",
+      "grupo_fato": "V-NC-01",
+      "tipo": "nao_consta",
+      "pergunta": "Qual é o CPF do titular da minha conta de energia?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E007",
+          "score": 0.8466640710830688
+        },
+        {
+          "id": "E006",
+          "score": 0.8304272294044495
+        },
+        {
+          "id": "E005",
+          "score": 0.8244794607162476
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E028",
+      "tipo": "respondível",
+      "resposta_esperada": "Não. Desligue o ferro em pausas prolongadas e não o deixe sem supervisão.",
+      "fatos_aceitos": [
+        [
+          "nao",
+          "deslig"
+        ],
+        [
+          "pausa",
+          "supervisao"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E028"
+      ],
+      "id": "V-E028-2",
+      "pergunta": "Em casa, posso deixar o ferro ligado durante uma pausa prolongada?",
+      "recuperados": [
+        {
+          "id": "E028",
+          "score": 0.9010720252990723
+        },
+        {
+          "id": "E026",
+          "score": 0.8612170219421387
+        },
+        {
+          "id": "E024",
+          "score": 0.8449373841285706
+        }
+      ]
+    },
+    {
+      "id": "V-NC-08",
+      "grupo_fato": "V-NC-08",
+      "tipo": "nao_consta",
+      "pergunta": "Qual o horário em que usei o chuveiro ontem?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E019",
+          "score": 0.8832284212112427
+        },
+        {
+          "id": "E002",
+          "score": 0.8627700209617615
+        },
+        {
+          "id": "E018",
+          "score": 0.8564572334289551
+        }
+      ]
+    },
+    {
+      "id": "V-NC-06",
+      "grupo_fato": "V-NC-06",
+      "tipo": "nao_consta",
+      "pergunta": "Quantos moradores há na minha casa?",
+      "resposta_esperada": "Não consta na base de conhecimento.",
+      "fatos_aceitos": [],
+      "trechos_relevantes": [],
+      "recuperados": [
+        {
+          "id": "E022",
+          "score": 0.8241370916366577
+        },
+        {
+          "id": "E023",
+          "score": 0.8181648254394531
+        },
+        {
+          "id": "E019",
+          "score": 0.8180301785469055
+        }
+      ]
+    },
+    {
+      "grupo_fato": "E026",
+      "tipo": "respondível",
+      "resposta_esperada": "Isso evita ligar o ferro repetidamente e reduz novos ciclos de aquecimento.",
+      "fatos_aceitos": [
+        [
+          "aquec",
+          "repetid"
+        ]
+      ],
+      "trechos_relevantes": [
+        "E026"
+      ],
+      "id": "V-E026-1",
+      "pergunta": "Por que juntar roupas para passar de uma vez?",
+      "recuperados": [
+        {
+          "id": "E026",
+          "score": 0.8950704336166382
+        },
+        {
+          "id": "E030",
+          "score": 0.8446670770645142
+        },
+        {
+          "id": "E019",
+          "score": 0.8401526808738708
+        }
+      ]
+    }
+  ]
+}

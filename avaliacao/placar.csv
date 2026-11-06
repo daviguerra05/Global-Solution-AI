@@ -1,0 +1,4 @@
+﻿configuracao,perguntas,chamadas_modelo,acerto_conteudo_pct,acerto_completo_pct,acerto_respondiveis_pct,alucinacao_operacional_pct,recusa_correta_pct,recusa_indevida_pct,json_modelo_valido_pct,json_api_valido_pct,citacao_valida_respondiveis_pct,latencia_media_s,latencia_p50_s,latencia_p95_s,recall_1,recall_1_sem_limiar,recall_3,recall_3_sem_limiar
+sem_contexto,60,60,3.33,0.0,5.0,90.0,0.0,10.0,0.0,100.0,,3.675,4.363,4.547,,,,
+rag,60,52,16.67,13.33,5.0,83.33,40.0,0.0,0.0,100.0,0.0,3.69,4.574,5.125,0.9,0.9,1.0,1.0
+lora_rag,60,52,28.33,25.0,17.5,65.0,50.0,10.0,94.23,100.0,85.0,1.807,1.729,3.194,0.9,0.9,1.0,1.0

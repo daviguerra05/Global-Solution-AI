@@ -1,0 +1,11 @@
+{
+  "corpus_sha256": "fe6567f9be43a847107e8e46ff4d37c6f04283588bfac0c61ff8e371c7ff0497",
+  "trechos": 30,
+  "dimensao": 384,
+  "max_tokens_encoder": 51,
+  "busca": "Produto interno exato entre vetores normalizados",
+  "prefixos": [
+    "query: ",
+    "passage: "
+  ]
+}

@@ -1,0 +1,10 @@
+# As assinaturas da auditoria dependem dos bytes originais, incluindo quebras de linha.
+# Preserve-os no commit e no checkout em qualquer sistema.
+* -text
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# JavaScript incorporado pelo Plotly e cópias do protocolo são artefatos de auditoria.
+relatorio/graficos/*.html -whitespace
+avaliacao/protocolo_executado/** -whitespace
+*.safetensors -diff
+*.npz -diff
+*.jpg -diff

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energia-clara"
+version = "1.0.0"
+description = "Assistente residencial local: energia, RAG e treinamento LoRA em CPU"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["energia_clara*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

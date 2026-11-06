@@ -1,0 +1,101 @@
+[
+  {
+    "id": "S01",
+    "titulo": "Entenda sua conta",
+    "entidade": "Cemig",
+    "url": "https://www.cemig.com.br/faturas/entenda-sua-conta/",
+    "formato": "HTML",
+    "licenca_original": "Sem licença aberta identificada. Documento original não redistribuído.",
+    "uso": "Fórmula de consumo e conversões dimensionais em notas autorais; sem reproduzir o documento original."
+  },
+  {
+    "id": "S02",
+    "titulo": "Conheça mais sobre a etiqueta do PBE",
+    "entidade": "Inmetro",
+    "url": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/sobre-a-etiqueta",
+    "formato": "HTML",
+    "licenca_original": "CC BY-ND 3.0, conforme link de licença verificado no rodapé da página. O original não é redistribuído.",
+    "uso": "Notas autorais factuais; a licença do projeto não cobre o original."
+  },
+  {
+    "id": "S03",
+    "titulo": "Tarifa Branca",
+    "entidade": "ANEEL",
+    "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas/tarifa-branca",
+    "formato": "HTML",
+    "licenca_original": "CC BY-ND 3.0, conforme link de licença verificado no rodapé da página. O original não é redistribuído.",
+    "uso": "Síntese autoral dos conceitos tarifários, sem valores atuais."
+  },
+  {
+    "id": "S04",
+    "titulo": "Perguntas frequentes sobre Tarifa Branca",
+    "entidade": "ANEEL",
+    "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas/tarifa-branca/perguntas-frequentes-sobre-tarifa-branca/",
+    "formato": "HTML",
+    "licenca_original": "CC BY-ND 3.0, conforme link de licença verificado no rodapé da página. O original não é redistribuído.",
+    "uso": "Notas factuais para explicar que a modalidade pode aumentar ou reduzir a conta."
+  },
+  {
+    "id": "S05",
+    "titulo": "Tarifa de Energia Elétrica",
+    "entidade": "Ministério de Minas e Energia",
+    "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/perguntas-frequentes/tarifa-de-energia-eletrica",
+    "formato": "HTML",
+    "licenca_original": "CC BY-ND 3.0, conforme link de licença verificado no rodapé da página. O original não é redistribuído.",
+    "uso": "Notas sobre componentes da fatura; sem cálculo de tributos reais."
+  },
+  {
+    "id": "S06",
+    "titulo": "Tarifas e Informações Econômico-Financeiras",
+    "entidade": "ANEEL",
+    "url": "https://www.gov.br/aneel/pt-br/centrais-de-conteudos/relatorios-e-indicadores/tarifas-e-informacoes-economico-financeiras",
+    "formato": "HTML",
+    "licenca_original": "CC BY-ND 3.0, conforme link de licença verificado no rodapé da página. O original não é redistribuído.",
+    "uso": "Distinção factual entre tarifa homologada e preço final da fatura."
+  },
+  {
+    "id": "S07",
+    "titulo": "Aprenda o básico da economia de energia em casa",
+    "entidade": "Cemig",
+    "url": "https://www.cemig.com.br/noticia/dicas-e-orientacoes/aprenda-o-basico-da-economia-de-energia-em-casa/",
+    "formato": "HTML",
+    "licenca_original": "Sem licença aberta identificada. Documento original não redistribuído.",
+    "uso": "Recomendações reescritas em notas breves; imagens e texto original não incluídos."
+  },
+  {
+    "id": "S08",
+    "titulo": "Acumular roupas para lavar e passar ajuda a economizar energia",
+    "entidade": "Cemig",
+    "url": "https://www.cemig.com.br/noticia/dicas-e-orientacoes/acumular-roupas-para-lavar-e-passar-ajuda-a-economizar-energia-cemig-explica-por-que/",
+    "formato": "HTML",
+    "licenca_original": "Sem licença aberta identificada. Documento original não redistribuído.",
+    "uso": "Notas autorais sobre organização de ciclos e respeito ao manual do aparelho."
+  },
+  {
+    "id": "S09",
+    "titulo": "Eficiência Energética",
+    "entidade": "Cemig RI",
+    "url": "https://ri.cemig.com.br/sustentabilidade/eficiencia-energetica",
+    "formato": "HTML",
+    "licenca_original": "Sem licença aberta identificada. Documento original não redistribuído.",
+    "uso": "Notas técnicas sobre standby, vedação e ventilação; sem percentuais universais."
+  },
+  {
+    "id": "S10",
+    "titulo": "Nova etiqueta do Inmetro para refrigeradores em 2026",
+    "entidade": "Inmetro",
+    "url": "https://www.gov.br/inmetro/pt-br/centrais-de-conteudo/noticias/2025/nova-etiqueta-do-inmetro-para-refrigeradores-entra-em-vigor-a-partir-de-1o-de-janeiro-de-2026/",
+    "formato": "HTML",
+    "licenca_original": "CC BY-ND 3.0, conforme link de licença verificado no rodapé da página. O original não é redistribuído.",
+    "uso": "Notas factuais datadas, conforme página consultada em 06/11/2026."
+  },
+  {
+    "id": "S11",
+    "titulo": "Sistema PBE: refrigeradores, frigobares e combinados",
+    "entidade": "Inmetro",
+    "url": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/refrigeradores-frigobares-combinados-combinados-frost-free",
+    "formato": "HTML",
+    "licenca_original": "CC BY-ND 3.0, conforme link de licença verificado no rodapé da página. O original não é redistribuído.",
+    "uso": "Indicação da ferramenta oficial para consultar produtos; sem copiar tabelas."
+  }
+]

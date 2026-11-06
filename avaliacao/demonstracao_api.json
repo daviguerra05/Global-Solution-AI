@@ -1,0 +1,190 @@
+{
+  "saude": {
+    "status": "ok",
+    "modelo": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "modelo_local": true,
+    "encoder_local": true,
+    "adaptador_treinado": true,
+    "avaliacao_concluida": true,
+    "persistencia_perguntas": false,
+    "servico": "local"
+  },
+  "ingestao_registros": 8,
+  "simulacao": {
+    "aparelhos": [
+      {
+        "aparelho": "Chuveiro",
+        "potencia_w": 5500.0,
+        "horas_dia": 0.5,
+        "dias_mes": 30.0,
+        "quantidade": 1,
+        "fator_uso": 1.0,
+        "consumo_kwh": 82.5,
+        "custo_energia_estimado": 78.38
+      },
+      {
+        "aparelho": "Ar-condicionado",
+        "potencia_w": 900.0,
+        "horas_dia": 6.0,
+        "dias_mes": 20.0,
+        "quantidade": 1,
+        "fator_uso": 0.65,
+        "consumo_kwh": 70.2,
+        "custo_energia_estimado": 66.69
+      },
+      {
+        "aparelho": "Geladeira",
+        "potencia_w": 150.0,
+        "horas_dia": 24.0,
+        "dias_mes": 30.0,
+        "quantidade": 1,
+        "fator_uso": 0.3,
+        "consumo_kwh": 32.4,
+        "custo_energia_estimado": 30.78
+      },
+      {
+        "aparelho": "Televisor",
+        "potencia_w": 100.0,
+        "horas_dia": 4.0,
+        "dias_mes": 30.0,
+        "quantidade": 1,
+        "fator_uso": 1.0,
+        "consumo_kwh": 12.0,
+        "custo_energia_estimado": 11.4
+      },
+      {
+        "aparelho": "Notebook",
+        "potencia_w": 65.0,
+        "horas_dia": 8.0,
+        "dias_mes": 22.0,
+        "quantidade": 1,
+        "fator_uso": 1.0,
+        "consumo_kwh": 11.44,
+        "custo_energia_estimado": 10.87
+      },
+      {
+        "aparelho": "Iluminação LED",
+        "potencia_w": 9.0,
+        "horas_dia": 5.0,
+        "dias_mes": 30.0,
+        "quantidade": 6,
+        "fator_uso": 1.0,
+        "consumo_kwh": 8.1,
+        "custo_energia_estimado": 7.7
+      },
+      {
+        "aparelho": "Ventilador",
+        "potencia_w": 60.0,
+        "horas_dia": 6.0,
+        "dias_mes": 20.0,
+        "quantidade": 1,
+        "fator_uso": 1.0,
+        "consumo_kwh": 7.2,
+        "custo_energia_estimado": 6.84
+      },
+      {
+        "aparelho": "Lavadora",
+        "potencia_w": 500.0,
+        "horas_dia": 1.0,
+        "dias_mes": 12.0,
+        "quantidade": 1,
+        "fator_uso": 1.0,
+        "consumo_kwh": 6.0,
+        "custo_energia_estimado": 5.7
+      }
+    ],
+    "consumo_total_kwh": 229.84,
+    "custo_energia_estimado": 218.35,
+    "tarifa_simulada_kwh": 0.95,
+    "formula": "W × horas/dia × dias × quantidade × fator de uso ÷ 1000",
+    "fonte_formula": "E001",
+    "natureza": "Estimativa educativa; valores fictícios ou informados pelo usuário, não medição.",
+    "limites": "Não inclui tributos, iluminação pública, bandeiras ou tarifas por horário. Fator de uso é uma hipótese, não um coeficiente certificado."
+  },
+  "consulta_base": {
+    "status": "fontes_encontradas",
+    "resposta": "Encontrei estas orientações relacionadas na base. Elas não determinam valores ou condições da sua casa.",
+    "fontes": [
+      "E019",
+      "E018",
+      "E027"
+    ],
+    "evidencias": [
+      {
+        "id": "E019",
+        "fonte_id": "S07",
+        "titulo": "Tempo de banho",
+        "texto": "Reduza o tempo de banho e feche a água enquanto se ensaboa para diminuir o tempo de funcionamento do chuveiro elétrico.",
+        "secao": "Chuveiro",
+        "url": "https://www.cemig.com.br/noticia/dicas-e-orientacoes/aprenda-o-basico-da-economia-de-energia-em-casa/",
+        "entidade": "Cemig",
+        "consultado_em": "2026-11-06",
+        "tipo": "nota_autoral_fundamentada",
+        "grupo_fato": "E019",
+        "particao_qa": "teste",
+        "score": 0.8976702690124512
+      },
+      {
+        "id": "E018",
+        "fonte_id": "S07",
+        "titulo": "Potência do chuveiro",
+        "texto": "Quando for confortável e compatível com o manual, prefira a posição verão ou menor aquecimento do chuveiro. A economia depende do aparelho e uso.",
+        "secao": "Chuveiro",
+        "url": "https://www.cemig.com.br/noticia/dicas-e-orientacoes/aprenda-o-basico-da-economia-de-energia-em-casa/",
+        "entidade": "Cemig",
+        "consultado_em": "2026-11-06",
+        "tipo": "nota_autoral_fundamentada",
+        "grupo_fato": "E018",
+        "particao_qa": "teste",
+        "score": 0.876617431640625
+      },
+      {
+        "id": "E027",
+        "fonte_id": "S08",
+        "titulo": "Programas de lavagem",
+        "texto": "Escolha o nível de água e o programa da lavadora de acordo com a quantidade e o tipo das roupas, evitando ciclos adicionais desnecessários.",
+        "secao": "Níveis de água e programas de lavagem",
+        "url": "https://www.cemig.com.br/noticia/dicas-e-orientacoes/acumular-roupas-para-lavar-e-passar-ajuda-a-economizar-energia-cemig-explica-por-que/",
+        "entidade": "Cemig",
+        "consultado_em": "2026-11-06",
+        "tipo": "nota_autoral_fundamentada",
+        "grupo_fato": "E027",
+        "particao_qa": "treino",
+        "score": 0.8654835224151611
+      }
+    ],
+    "origem": "consulta_documental",
+    "modelo_chamado": false,
+    "tempo_s": 11.322
+  },
+  "geracao_experimental": {
+    "status": "respondido",
+    "resposta": "Não. A tarifa branca pode aumentar a conta se o consumo fica concentrado em ponta e intermediário.",
+    "fontes": [
+      "E010"
+    ],
+    "configuracao": "lora_rag",
+    "origem": "modelo",
+    "modelo_chamado": true,
+    "json_modelo_valido": true,
+    "erro_verificacao": "",
+    "tempo_s": 2.021,
+    "evidencias": [
+      {
+        "id": "E010",
+        "fonte_id": "S04",
+        "titulo": "Escolha da Tarifa Branca",
+        "texto": "A Tarifa Branca pode aumentar a conta quando o consumo fica concentrado em ponta e intermediário. A escolha exige analisar o perfil.",
+        "secao": "Quais os benefícios da Tarifa Branca?",
+        "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas/tarifa-branca/perguntas-frequentes-sobre-tarifa-branca/",
+        "entidade": "ANEEL",
+        "consultado_em": "2026-11-06",
+        "tipo": "nota_autoral_fundamentada",
+        "grupo_fato": "E010",
+        "particao_qa": "treino",
+        "score": 0.9028428792953491
+      }
+    ]
+  },
+  "nota": "A pergunta da Tarifa Branca é da família de treino; demonstra integração, não generalização. Não compõe o placar final."
+}

@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "treino": 200,
+  "validacao": 20,
+  "teste": 60,
+  "trechos": 30,
+  "grupos_fatuais_teste": 10,
+  "teste_sha256": "5136b5ee1d2432e7e4ab455f6e9c8489e6e232f7c05542f049cdbc2ccba2286e",
+  "separacao": "Grupos de fatos e perguntas disjuntos. As 4 formulações por fato do teste são correlacionadas, não 40 fatos independentes.",
+  "preparado_antes_do_treino": true
+}
