@@ -6,6 +6,23 @@ from energia_clara.consumption import parse_csv
 client=TestClient(app)
 
 
+def test_request_limit_checks_actual_bytes_without_trusting_header():
+    for headers in [{"content-length":"1"}, {"transfer-encoding":"chunked"}]:
+        response=client.post("/simular",content=iter([b"x"*80_000,b"x"*80_000]),headers=headers)
+        assert response.status_code==413
+    assert client.post("/simular",content=b"{}",headers={"content-length":"-1"}).status_code==400
+
+
+def test_changed_corpus_returns_actionable_error(monkeypatch):
+    from types import SimpleNamespace
+    from threading import Lock
+    import api.main as mod
+    def changed(question):
+        raise ValueError("A base mudou")
+    monkeypatch.setattr(mod,"_assistant",SimpleNamespace(lock=Lock(),search=changed))
+    assert client.get("/buscar",params={"pergunta":"Como economizar?"}).status_code==503
+
+
 def test_simulation_is_integrated_over_http():
     records=parse_csv((ROOT/"dados"/"consumo_exemplo.csv").read_bytes())
     r=client.post("/simular",json={"aparelhos":records,"tarifa_kwh":0.95})

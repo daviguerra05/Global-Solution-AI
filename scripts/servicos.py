@@ -10,6 +10,27 @@ from energia_clara.config import ROOT, read_json, write_json
 STATE=ROOT/"runtime"/"servicos.json"
 
 
+def check_api_dependencies():
+    """Detecta falhas de importação antes de abrir uma interface sem API."""
+    flags=subprocess.CREATE_NO_WINDOW if os.name=="nt" else 0
+    result=subprocess.run([sys.executable,"-c","import api.main"],cwd=ROOT,
+                          env={**os.environ,"PYTHONUTF8":"1"},capture_output=True,
+                          text=True,encoding="utf-8",errors="replace",timeout=60,
+                          creationflags=flags)
+    if result.returncode:
+        runtime=ROOT/"runtime"
+        runtime.mkdir(exist_ok=True)
+        (runtime/"diagnostico_api.log").write_text(result.stderr,encoding="utf-8")
+        if "_pydantic_core" in result.stderr and "DLL load failed" in result.stderr:
+            raise RuntimeError(
+                "A API não iniciou: o Windows não conseguiu carregar pydantic_core.\n"
+                "Se o diagnóstico informa Controle de Aplicativo, a biblioteca está bloqueada pela política do Windows.\n"
+                "Reabrir o atalho não resolve esse bloqueio. Solicite ao administrador a análise/liberação da biblioteca oficial,\n"
+                "ou execute o projeto em um computador onde as dependências sejam permitidas.\n"
+                "Não é necessário desativar as proteções do Windows. Diagnóstico: runtime/diagnostico_api.log")
+        raise RuntimeError("A API não conseguiu carregar suas dependências. Consulte runtime/diagnostico_api.log.")
+
+
 def owned(row):
     import psutil
     try:
@@ -37,6 +58,7 @@ def stop():
 def start():
     import psutil
     import requests
+    check_api_dependencies()
     state=read_json(STATE,{})
     runtime=ROOT/"runtime"; runtime.mkdir(exist_ok=True)
     env={**os.environ,"PYTHONUTF8":"1","HF_HUB_OFFLINE":"1"}
@@ -72,4 +94,4 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser(); parser.add_argument("acao",choices=["iniciar","parar"])
     args=parser.parse_args()
     try: start() if args.acao=="iniciar" else stop()
-    except RuntimeError as exc: print(str(exc)); sys.exit(1)
+    except (RuntimeError,subprocess.TimeoutExpired) as exc: print(str(exc)); sys.exit(1)

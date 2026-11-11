@@ -1,7 +1,8 @@
 {
-  "verificado_em_utc": "2026-11-06T18:28:21.339044+00:00",
-  "resultado": "Artefatos íntegros; não certifica qualidade factual da geração.",
-  "testes_aprovados": 23,
+  "verificado_em_utc": "2026-11-09T21:54:25.071201+00:00",
+  "resultado": "Artefatos íntegros; validação funcional pendente: consulte avaliacao/testes.xml e docs/AUDITORIA_ENTREGA.md.",
+  "validacao_funcional_aprovada": false,
+  "testes_aprovados": 0,
   "notebooks": [
     {
       "arquivo": "01_base_e_busca.ipynb",

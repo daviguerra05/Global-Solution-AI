@@ -42,27 +42,35 @@ def main():
     chunks=read_jsonl(ROOT/"base"/"trechos.jsonl")
     rows={m:read_jsonl(ROOT/"avaliacao"/f"resultados_{m}.jsonl") for m in LABELS}
     flat=[r for items in rows.values() for r in items]
-    cases=[]; seen=set()
-    selectors=[
-        lambda r:r["configuracao"]=="lora_rag" and not r["acerto_completo"],
-        lambda r:r["configuracao"]=="sem_contexto" and r["tipo"]=="nao_consta" and not r["correto_conteudo"],
-        lambda r:r["configuracao"]=="rag" and r["tipo"]!="nao_consta" and not r["correto_conteudo"],
-        lambda r:r["origem"]=="limiar_busca" and r["tipo"]!="nao_consta",
-        lambda r:r["configuracao"]=="lora_rag" and bool(r["erro_verificacao"]),
+    # A seleção editorial usa erros confirmados na revisão, inclusive falsos acertos do corretor.
+    import hashlib
+    review=read_json(ROOT/"avaliacao/placar_revisado.json")
+    if not review or any(r["saida_sha256"]!=hashlib.sha256((ROOT/"avaliacao"/f"resultados_{r['configuracao']}.jsonl").read_bytes()).hexdigest() for r in review):
+        raise SystemExit("Refaça a revisão semântica antes de gerar documentos para novas saídas.")
+    selected=[
+        ("lora_rag","T-E002-4","Conversão de unidade incorreta",
+         "Mesmo com E002 em primeiro lugar, a geração troca minutos por horas. O corretor por palavras-chave creditou um erro factual.",
+         "Acrescentar exemplos de conversões na validação e conferir operação e unidade; usar cálculo determinístico para conversões numéricas."),
+        ("lora_rag","T-E003-4","Confusão entre potência e energia e fonte inadequada",
+         "O modelo confunde W com kWh e cita E001 apesar de recuperar E003. Existência da citação não garante suporte à afirmação.",
+         "Treinar contrastes entre unidades e avaliar suporte semântico por afirmação em novo teste independente."),
+        ("lora_rag","T-NC-19","Recusa textual com status e fonte contraditórios",
+         "O texto diz não consta, mas o JSON declara respondido e cita E019. A validação estrutural não detecta a contradição.",
+         "Validar consistência entre recusa, status e fontes e ampliar negativos difíceis; medir separadamente essa proteção de código."),
+        ("rag","T-E015-1","Repetição da pergunta e ausência de JSON",
+         "Apesar de E015 ser o primeiro trecho, o modelo repete o enunciado até o limite de tokens, sem responder.",
+         "Testar exemplos de extração e decodificação restrita; avaliar fidelidade factual separadamente do formato."),
+        ("lora_rag","T-NC-01","Não reconhece ausência de tarifa pessoal",
+         "Similaridade temática recupera notas gerais, mas nenhuma contém a tarifa da casa. A geração devolve uma tautologia em vez de recusar.",
+         "Incluir negativos sobre dados pessoais ausentes na validação e distinguir relevância temática de suficiência da evidência."),
     ]
-    for select in selectors:
-        item=next((r for r in flat if select(r) and (r["configuracao"],r["id"]) not in seen),None)
-        if item:
-            kind,cause,fix=diagnose(item)
-            cases.append({**item,"categoria":kind,"causa_provavel":cause,"correcao_proposta":fix})
-            seen.add((item["configuracao"],item["id"]))
-    for item in flat:
-        if len(cases)>=5: break
-        if item["acerto_completo"] or (item["configuracao"],item["id"]) in seen: continue
-        kind,cause,fix=diagnose(item)
-        cases.append({**item,"categoria":kind,"causa_provavel":cause,"correcao_proposta":fix})
-        seen.add((item["configuracao"],item["id"]))
-    if len(cases)<5: raise RuntimeError("Há menos de cinco erros reais; não fabricar exemplos.")
+    annotations={(r["configuracao"],r["id"]):r for r in read_json(ROOT/"avaliacao/revisao_semantica.json")["decisoes"]}
+    cases=[]
+    for mode,identifier,kind,cause,fix in selected:
+        item=next(r for r in flat if r["configuracao"]==mode and r["id"]==identifier)
+        annotation=annotations[(mode,identifier)]
+        assert not annotation["acerto_completo_revisao"]
+        cases.append({**item,"categoria":kind,"causa_provavel":cause,"correcao_proposta":fix,"revisao_semantica":annotation})
     write_json(ROOT/"avaliacao"/"cinco_erros.json",cases)
     with (ROOT/"avaliacao"/"placar.csv").open("w",encoding="utf-8-sig",newline="") as f:
         writer=csv.DictWriter(f,fieldnames=list(score[0])); writer.writeheader(); writer.writerows(score)
@@ -102,6 +110,8 @@ def main():
     report='''# Energia Clara — Relatório técnico da atividade de IA
 
 Assistente de uso consciente de energia residencial com LLM local, RAG, especialização LoRA e integração em um MVP Streamlit. O treinamento e as avaliações foram executados neste computador, em CPU. O relatório usa os artefatos reais da execução, sem números ilustrativos apresentados como medições.
+
+**Conferência de 09/11/2026:** artefatos íntegros, mas a revalidação funcional está bloqueada pelo Controle de Aplicativo do Windows ao carregar uma dependência. Consulte a [auditoria e as pendências](docs/AUDITORIA_ENTREGA.md) antes de gravar.
 
 ## Integrantes
 
@@ -268,9 +278,9 @@ Referência para detalhamento das medidas: [guia da ANPD](https://www.gov.br/anp
 
 @@AMBIENTE@@
 
-Veja [README.md](README.md) para instalar, iniciar, treinar e executar notebooks. O modelo original e o encoder ficam fora do Git; revisões e hashes estão em `modelos/revisoes.json`. O adaptador treinado é incluído. `requirements.lock.txt` registra as dependências transitivas utilizadas. Os 23 testes cobrem cálculos, dados inválidos, ingestão/API, integridade das partições e submissão de cenário pela interface.
+Veja [README.md](README.md) para instalar, iniciar, treinar e executar notebooks. O modelo original e o encoder ficam fora do Git; revisões e hashes estão em `modelos/revisoes.json`. O adaptador treinado é incluído. `requirements.lock.txt` registra as dependências transitivas utilizadas. Os testes automatizados cobrem cálculos, dados inválidos, ingestão/API, integridade das partições e submissão de cenário pela interface.
 
-As bibliotecas emitiram avisos de descontinuação no adaptador de testes, sem falha de execução. Os testes não são uma validação de verdade factual da LLM; essa avaliação está nos resultados, no gabarito e nos casos revisados.
+O estado da conferência atual e eventuais impedimentos de ambiente constam em [docs/AUDITORIA_ENTREGA.md](docs/AUDITORIA_ENTREGA.md). Os testes não são uma validação de verdade factual da LLM; essa avaliação está nos resultados, no gabarito e nos casos revisados.
 
 ## Entrega e links
 
@@ -322,6 +332,8 @@ README=r'''# Energia Clara
 
 ![Painel da casa fictícia](relatorio/capturas/painel.jpg)
 
+**Conferência de 09/11/2026:** artefatos íntegros, mas a revalidação funcional está bloqueada pelo Controle de Aplicativo do Windows ao carregar uma dependência. Consulte a [auditoria e as pendências](docs/AUDITORIA_ENTREGA.md) antes de gravar.
+
 ## Abrir a demonstração
 
 Neste computador, dê dois cliques em **`Iniciar_Energia_Clara.bat`**. A interface abre em [127.0.0.1:8501](http://127.0.0.1:8501). Para encerrar os dois serviços gerenciados por esse atalho, use **`Parar_Energia_Clara.bat`**.
@@ -363,23 +375,34 @@ Os modelos somam aproximadamente 0,75 GB em pesos, além de tokenizadores, bibli
 
 O ambiente já criado nesta máquina reutiliza PyTorch e algumas bibliotecas previamente disponíveis via `--system-site-packages`, sem alterar a instalação global. O roteiro acima cria um ambiente novo e usa o arquivo de versões exportado das dependências efetivamente utilizadas.
 
+## Conferir a entrega existente
+
+Com a API iniciada, execute os testes e a conferência, sem treinar novamente:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=avaliacao/testes.xml
+.\.venv\Scripts\python.exe -m scripts.verificar_entrega
+```
+
+Veja a [auditoria por requisito](docs/AUDITORIA_ENTREGA.md) e o [roteiro do vídeo e envio](docs/ENTREGA_MANUAL.md).
+
 ## Reproduzir o experimento
+
+Use uma cópia separada conforme abaixo. Estes comandos geram um novo experimento, cuja revisão semântica precisará ser refeita.
 
 ```powershell
 .\.venv\Scripts\python.exe -m scripts.preparar_dados
 .\.venv\Scripts\python.exe -m scripts.baixar_recursos
 .\.venv\Scripts\python.exe -m scripts.treinar_lora --piloto
 .\.venv\Scripts\python.exe -m scripts.experimento
-.\.venv\Scripts\python.exe -m scripts.gerar_relatorio
-.\.venv\Scripts\python.exe -m scripts.gerar_notebooks --executar
-.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=avaliacao/testes.xml
 ```
 
-`experimento` se recusa a sobrescrever uma avaliação C já existente. Para um novo experimento completo, **copie a pasta do projeto sem os três `avaliacao/resultados_*.jsonl`, `historico_treino.json`, `placar.json` e o adaptador**, ou arquive esses arquivos deliberadamente. O roteiro acima descreve uma reprodução limpa; o repositório entregue já contém os resultados. `--continuar` retoma etapas completas/incompletas do mesmo protocolo; não serve para comparar dados ou modelos alterados. Não troque o teste para melhorar o placar publicado.
+`experimento` se recusa a sobrescrever uma avaliação C já existente. Para um novo experimento completo, **copie a pasta do projeto sem os três `avaliacao/resultados_*.jsonl`, `historico_treino.json`, `placar.json` e o adaptador**, ou arquive esses arquivos deliberadamente. Após a nova execução, revise as novas saídas e atualize as anotações e hashes; só então execute `scripts.gerar_relatorio`. Inicie a API com `scripts.servicos iniciar` antes de `scripts.gerar_notebooks --executar`. A revisão distribuída não serve para novos resultados. O roteiro acima descreve uma reprodução limpa; o repositório entregue já contém os resultados. `--continuar` retoma etapas completas/incompletas do mesmo protocolo; não serve para comparar dados ou modelos alterados. Não troque o teste para melhorar o placar publicado.
 
 Os notebooks leem os artefatos reais, verificam suas assinaturas e exibem as saídas; o treinamento longo é feito pelo script próprio, não repetido silenciosamente ao abrir um notebook. O notebook de integração também faz chamadas reais à API local. Os gráficos HTML são autocontidos e não precisam de CDN.
 
-A conferência final foi registrada em [avaliacao/verificacao_entrega.json](avaliacao/verificacao_entrega.json), com os três notebooks executados, 60 saídas por configuração, cinco erros reais e 23 testes aprovados. Para repetir a checagem dos artefatos sem treinar, execute `.\.venv\Scripts\python.exe -m scripts.verificar_entrega`. O Git preserva os bytes originais para não invalidar os hashes por conversão de quebras de linha.
+A conferência final foi registrada em [avaliacao/verificacao_entrega.json](avaliacao/verificacao_entrega.json), com os três notebooks executados, 60 saídas por configuração, cinco erros reais e o resultado dos testes registrado em `avaliacao/testes.xml`. Para repetir a checagem dos artefatos sem treinar, execute `.\.venv\Scripts\python.exe -m scripts.verificar_entrega`. O Git preserva os bytes originais para não invalidar os hashes por conversão de quebras de linha.
 
 A revisão semântica distribuída se aplica somente às saídas publicadas, conferidas por hash. Em uma nova execução, é necessário revisar as novas saídas antes de gerar uma nova conclusão; o programa recusa reutilizar a anotação antiga.
 

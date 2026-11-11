@@ -30,6 +30,8 @@ def make_examples(items, chunks, seed):
 
 
 def train(pilot=False):
+    if not pilot and (ADAPTER_DIR/"adapter_model.safetensors").exists():
+        raise SystemExit("Adaptador já existe. Preserve a entrega e treine em uma cópia separada sem o adaptador anterior, conforme README.")
     import torch
     import psutil
     from transformers import AutoModelForCausalLM, AutoTokenizer

@@ -4,6 +4,8 @@
 
 ![Painel da casa fictícia](relatorio/capturas/painel.jpg)
 
+**Conferência de 09/11/2026:** artefatos íntegros, mas a revalidação funcional está bloqueada pelo Controle de Aplicativo do Windows ao carregar uma dependência. Consulte a [auditoria e as pendências](docs/AUDITORIA_ENTREGA.md) antes de gravar.
+
 ## Abrir a demonstração
 
 Neste computador, dê dois cliques em **`Iniciar_Energia_Clara.bat`**. A interface abre em [127.0.0.1:8501](http://127.0.0.1:8501). Para encerrar os dois serviços gerenciados por esse atalho, use **`Parar_Energia_Clara.bat`**.
@@ -49,23 +51,34 @@ Os modelos somam aproximadamente 0,75 GB em pesos, além de tokenizadores, bibli
 
 O ambiente já criado nesta máquina reutiliza PyTorch e algumas bibliotecas previamente disponíveis via `--system-site-packages`, sem alterar a instalação global. O roteiro acima cria um ambiente novo e usa o arquivo de versões exportado das dependências efetivamente utilizadas.
 
+## Conferir a entrega existente
+
+Com a API iniciada, execute os testes e a conferência, sem treinar novamente:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=avaliacao/testes.xml
+.\.venv\Scripts\python.exe -m scripts.verificar_entrega
+```
+
+Veja a [auditoria por requisito](docs/AUDITORIA_ENTREGA.md) e o [roteiro do vídeo e envio](docs/ENTREGA_MANUAL.md).
+
 ## Reproduzir o experimento
+
+Use uma cópia separada conforme abaixo. Estes comandos geram um novo experimento, cuja revisão semântica precisará ser refeita.
 
 ```powershell
 .\.venv\Scripts\python.exe -m scripts.preparar_dados
 .\.venv\Scripts\python.exe -m scripts.baixar_recursos
 .\.venv\Scripts\python.exe -m scripts.treinar_lora --piloto
 .\.venv\Scripts\python.exe -m scripts.experimento
-.\.venv\Scripts\python.exe -m scripts.gerar_relatorio
-.\.venv\Scripts\python.exe -m scripts.gerar_notebooks --executar
-.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=avaliacao/testes.xml
 ```
 
-`experimento` se recusa a sobrescrever uma avaliação C já existente. Para um novo experimento completo, **copie a pasta do projeto sem os três `avaliacao/resultados_*.jsonl`, `historico_treino.json`, `placar.json` e o adaptador**, ou arquive esses arquivos deliberadamente. O roteiro acima descreve uma reprodução limpa; o repositório entregue já contém os resultados. `--continuar` retoma etapas completas/incompletas do mesmo protocolo; não serve para comparar dados ou modelos alterados. Não troque o teste para melhorar o placar publicado.
+`experimento` se recusa a sobrescrever uma avaliação C já existente. Para um novo experimento completo, **copie a pasta do projeto sem os três `avaliacao/resultados_*.jsonl`, `historico_treino.json`, `placar.json` e o adaptador**, ou arquive esses arquivos deliberadamente. Após a nova execução, revise as novas saídas e atualize as anotações e hashes; só então execute `scripts.gerar_relatorio`. Inicie a API com `scripts.servicos iniciar` antes de `scripts.gerar_notebooks --executar`. A revisão distribuída não serve para novos resultados. O roteiro acima descreve uma reprodução limpa; o repositório entregue já contém os resultados. `--continuar` retoma etapas completas/incompletas do mesmo protocolo; não serve para comparar dados ou modelos alterados. Não troque o teste para melhorar o placar publicado.
 
 Os notebooks leem os artefatos reais, verificam suas assinaturas e exibem as saídas; o treinamento longo é feito pelo script próprio, não repetido silenciosamente ao abrir um notebook. O notebook de integração também faz chamadas reais à API local. Os gráficos HTML são autocontidos e não precisam de CDN.
 
-A conferência final foi registrada em [avaliacao/verificacao_entrega.json](avaliacao/verificacao_entrega.json), com os três notebooks executados, 60 saídas por configuração, cinco erros reais e 23 testes aprovados. Para repetir a checagem dos artefatos sem treinar, execute `.\.venv\Scripts\python.exe -m scripts.verificar_entrega`. O Git preserva os bytes originais para não invalidar os hashes por conversão de quebras de linha.
+A conferência final foi registrada em [avaliacao/verificacao_entrega.json](avaliacao/verificacao_entrega.json), com os três notebooks executados, 60 saídas por configuração, cinco erros reais e o resultado dos testes registrado em `avaliacao/testes.xml`. Para repetir a checagem dos artefatos sem treinar, execute `.\.venv\Scripts\python.exe -m scripts.verificar_entrega`. O Git preserva os bytes originais para não invalidar os hashes por conversão de quebras de linha.
 
 A revisão semântica distribuída se aplica somente às saídas publicadas, conferidas por hash. Em uma nova execução, é necessário revisar as novas saídas antes de gerar uma nova conclusão; o programa recusa reutilizar a anotação antiga.
 

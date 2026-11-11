@@ -35,7 +35,7 @@ def api(method,path,**kwargs):
         if isinstance(detail,list): detail="Confira os campos informados e os limites da simulação."
         return None,str(detail)
     except requests.RequestException:
-        return None,"O serviço local está indisponível. Abra Iniciar_Energia_Clara.bat na pasta do projeto e tente novamente."
+        return None,"A interface está aberta, mas não conseguiu acessar a API local. Execute Iniciar_Energia_Clara.bat e confira a mensagem na janela. Se houver bloqueio do Windows, reiniciar o atalho não resolve: consulte runtime/diagnostico_api.log e docs/AUDITORIA_ENTREGA.md."
 
 
 @st.cache_data(ttl=5)

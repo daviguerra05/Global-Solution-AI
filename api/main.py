@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File, Query, Request
 from fastapi.responses import JSONResponse
+from threading import Lock
 from energia_clara.config import ROOT, MODEL_DIR, ADAPTER_DIR, ENCODER_DIR, BASE_MODEL, read_json, read_jsonl
 from energia_clara.schemas import Question, Simulation
 from energia_clara.consumption import parse_csv, simulate
@@ -8,13 +9,15 @@ app=FastAPI(title="Energia Clara",version="1.0.0",description="Simulação resid
 
 # Carga da LLM é adiada até a primeira pergunta. Simulação e saúde não carregam os modelos.
 _assistant=None
+_assistant_lock=Lock()
 
 
 def assistant():
     global _assistant
-    if _assistant is None:
-        from energia_clara.service import AssistantService
-        _assistant=AssistantService()
+    with _assistant_lock:
+        if _assistant is None:
+            from energia_clara.service import AssistantService
+            _assistant=AssistantService()
     return _assistant
 
 
@@ -22,7 +25,15 @@ def assistant():
 async def body_limit(request:Request,call_next):
     try: size=int(request.headers.get("content-length","0"))
     except ValueError: return JSONResponse(status_code=400,content={"detail":"Tamanho de requisição inválido."})
+    if size<0: return JSONResponse(status_code=400,content={"detail":"Tamanho de requisição inválido."})
     if size>150_000: return JSONResponse(status_code=413,content={"detail":"Requisição maior que 150 KB."})
+    # Verifica os bytes recebidos também quando Content-Length falta ou é falso.
+    content=bytearray()
+    async for chunk in request.stream():
+        if len(content)+len(chunk)>150_000:
+            return JSONResponse(status_code=413,content={"detail":"Requisição maior que 150 KB."})
+        content.extend(chunk)
+    request._body=bytes(content)
     return await call_next(request)
 
 
@@ -79,6 +90,7 @@ def search(pergunta:str=Query(min_length=3,max_length=800)):
         rows=service.search(pergunta)
         return {"trechos":rows,"limiar":service.retriever.threshold}
     except FileNotFoundError: raise HTTPException(status_code=503,detail="Prepare o índice e o encoder antes da busca.")
+    except ValueError: raise HTTPException(status_code=503,detail="A base mudou. Recalibre a busca antes de consultar.")
     finally: service.lock.release()
 
 
