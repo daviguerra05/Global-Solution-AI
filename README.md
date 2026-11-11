@@ -123,8 +123,8 @@ tests/             verificações funcionais e de integridade
 | Rui Amorim Siqueira | RM98436 |
 | Luigi Ferrara Sinno | RM98047 |
 
-## Publicação e vídeo
+## Vídeo
 
-Foi preparado somente um **repositório Git local**, sem remoto e sem publicação. O aluno fará o envio manual ao seu GitHub público e gravará o vídeo posteriormente. Não há links externos inventados. O material original das aulas, o ambiente virtual, caches, snapshots das páginas e pesos completos dos modelos não entram no Git.
+[LINK DO VÍDEO]
 
 Código próprio sob [MIT](LICENSE); notas e perguntas sob [CC BY 4.0](base/LICENCA.md); adaptador derivado de SmolLM2 sob [Apache-2.0](modelos/adaptador/LICENCA.md). Os direitos dos documentos de referência são preservados. A base metodológica são as aulas fornecidas da disciplina.
