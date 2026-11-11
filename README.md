@@ -1,6 +1,6 @@
 # Energia Clara
 
-**Assistente local de uso consciente de energia residencial.** MVP em Streamlit, API FastAPI, simulação de consumo por CSV e comparação real de SmolLM2 sem contexto, RAG simples e RAG + LoRA. Treinamento feito em CPU neste computador.
+**Assistente local de uso consciente de energia residencial.** MVP em Streamlit, API FastAPI, simulação de consumo por CSV e comparação real de SmolLM2 sem contexto, RAG simples e RAG + LoRA. Treinamento feito em CPU no computador local.
 
 ![Painel da casa fictícia](relatorio/capturas/painel.jpg)
 
