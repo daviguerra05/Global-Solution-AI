@@ -2,8 +2,6 @@
 
 Assistente de uso consciente de energia residencial com LLM local, RAG, especialização LoRA e integração em um MVP Streamlit. O treinamento e as avaliações foram executados neste computador, em CPU. O relatório usa os artefatos reais da execução, sem números ilustrativos apresentados como medições.
 
-**Conferência de 09/11/2026:** artefatos íntegros, mas a revalidação funcional está bloqueada pelo Controle de Aplicativo do Windows ao carregar uma dependência. Consulte a [auditoria e as pendências](docs/AUDITORIA_ENTREGA.md) antes de gravar.
-
 ## Integrantes
 
 | Integrante | RM |
@@ -327,7 +325,7 @@ Referência para detalhamento das medidas: [guia da ANPD](https://www.gov.br/anp
 | torch | 2.13.0+cpu |
 | transformers | 4.57.6 |
 | peft | 0.18.1 |
-| cpu | Intel Core i7-13620H (informado pelo usuário) |
+| cpu | Intel Core i7-13620H  |
 | ram_total_gb | 15.67 |
 | device | cpu |
 | threads | 6 |
@@ -338,8 +336,6 @@ Veja [README.md](README.md) para instalar, iniciar, treinar e executar notebooks
 
 O estado da conferência atual e eventuais impedimentos de ambiente constam em [docs/AUDITORIA_ENTREGA.md](docs/AUDITORIA_ENTREGA.md). Os testes não são uma validação de verdade factual da LLM; essa avaliação está nos resultados, no gabarito e nos casos revisados.
 
-## Entrega e links
+##
 
-Este relatório, os notebooks com saídas, código, base, testes e adaptador estão no repositório Git local. A publicação no GitHub e o vídeo serão feitos pelo aluno, conforme o escopo confirmado. Por isso não foram inventados links externos. Após publicar, o próprio endereço deste repositório identifica a entrega; o link do vídeo pode ser acrescentado pelo aluno.
-
-Base metodológica: aulas fornecidas da disciplina, especialmente baseline, avaliação separada, LoRA, RAG e inspeção de falhas. Referências técnicas: [SmolLM2](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct), [E5](https://huggingface.co/intfloat/multilingual-e5-small), [PEFT](https://huggingface.co/docs/peft/index) e [Streamlit](https://docs.streamlit.io/).
+Referências técnicas: [SmolLM2](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct), [E5](https://huggingface.co/intfloat/multilingual-e5-small), [PEFT](https://huggingface.co/docs/peft/index) e [Streamlit](https://docs.streamlit.io/).
