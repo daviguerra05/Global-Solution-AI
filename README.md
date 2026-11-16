@@ -8,7 +8,11 @@
 
 ## Abrir a demonstração
 
-Neste computador, dê dois cliques em **`Iniciar_Energia_Clara.bat`**. A interface abre em [127.0.0.1:8501](http://127.0.0.1:8501). Para encerrar os dois serviços gerenciados por esse atalho, use **`Parar_Energia_Clara.bat`**.
+A demonstração é executada localmente no seu computador. Para começar, clone este repositório ou baixe e extraia o ZIP pelo GitHub. Em seguida, siga as instruções da seção [Preparar em outro computador](#preparar-em-outro-computador) para instalar as dependências, baixar os modelos e iniciar os serviços.
+
+Com os serviços iniciados, acesse [127.0.0.1:8501](http://127.0.0.1:8501) no navegador do mesmo computador. Esse endereço só funciona após a inicialização local da demonstração.
+
+Nas próximas vezes, com o ambiente já preparado no Windows, dê dois cliques em **`Iniciar_Energia_Clara.bat`**, na pasta do projeto. Para encerrar os dois serviços gerenciados por esse atalho, use **`Parar_Energia_Clara.bat`**.
 
 - **Visão geral:** consumo estimado e participação dos aparelhos da casa fictícia.
 - **Simular consumo:** importar CSV, editar hábitos e comparar cenários.
