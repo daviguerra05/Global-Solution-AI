@@ -4,7 +4,6 @@
 
 ![Painel da casa fictícia](relatorio/capturas/painel.jpg)
 
-**Conferência de 09/11/2026:** artefatos íntegros, mas a revalidação funcional está bloqueada pelo Controle de Aplicativo do Windows ao carregar uma dependência. Consulte a [auditoria e as pendências](docs/AUDITORIA_ENTREGA.md) antes de gravar.
 
 ## Abrir a demonstração
 
@@ -54,17 +53,6 @@ O modelo original e o encoder foram excluídos do Git. `modelos/revisoes.json` f
 Os modelos somam aproximadamente 0,75 GB em pesos, além de tokenizadores, bibliotecas e cache. Reserve alguns GB de disco. Em CPU, a primeira pergunta carrega recursos e pode demorar mais. O uso de memória e o tempo efetivamente medidos estão no relatório.
 
 O ambiente já criado nesta máquina reutiliza PyTorch e algumas bibliotecas previamente disponíveis via `--system-site-packages`, sem alterar a instalação global. O roteiro acima cria um ambiente novo e usa o arquivo de versões exportado das dependências efetivamente utilizadas.
-
-## Conferir a entrega existente
-
-Com a API iniciada, execute os testes e a conferência, sem treinar novamente:
-
-```powershell
-.\.venv\Scripts\python.exe -m pytest -q --junitxml=avaliacao/testes.xml
-.\.venv\Scripts\python.exe -m scripts.verificar_entrega
-```
-
-Veja a [auditoria por requisito](docs/AUDITORIA_ENTREGA.md) e o [roteiro do vídeo e envio](docs/ENTREGA_MANUAL.md).
 
 ## Reproduzir o experimento
 
