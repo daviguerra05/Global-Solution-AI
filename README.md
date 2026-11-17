@@ -117,6 +117,6 @@ tests/             verificações funcionais e de integridade
 
 ## Vídeo
 
-[LINK DO VÍDEO]
+[LINK DO [VÍDEO](https://www.youtube.com/watch?v=jc7H6PzKTVM)]
 
 Código próprio sob [MIT](LICENSE); notas e perguntas sob [CC BY 4.0](base/LICENCA.md); adaptador derivado de SmolLM2 sob [Apache-2.0](modelos/adaptador/LICENCA.md). Os direitos dos documentos de referência são preservados. A base metodológica são as aulas fornecidas da disciplina.
